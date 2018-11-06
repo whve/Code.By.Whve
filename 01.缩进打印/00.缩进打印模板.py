@@ -25,7 +25,15 @@ import os
 # 路径设置,读取或保存的的修改路径.
 # os.chdir(r'C:\Users\wz\Desktop\HeadFirstPython\chaphter3_4')
 
-# 数据导入
+# 数据读取,每行成为列表中的元素.
+''' 从data.txt中读取数据生成a列表.'''
+a = []
+f = open("data_a.txt")
+for line in f:
+    line = line.replace("\n","")
+    a.append(list(map(eval, line.split(","))))
+f.close()
+
 ab=a&b
 ac=a&c
 bc=b&c
