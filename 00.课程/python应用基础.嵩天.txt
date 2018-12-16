@@ -16,6 +16,8 @@
 
 ---
 
+与其感慨路难行，不如即刻出发Better to run than curse the road.
+
 01	Python 快速入门
 
 课时量：2 周，每周 2-3 小时
