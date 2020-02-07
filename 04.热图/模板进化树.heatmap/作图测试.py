@@ -1,8 +1,20 @@
+# -*- coding: utf-8 -*-
 """
-Annotated heatmaps
-==================
+Created on Fri Jan  4 14:52:40 2019
 
+@author: Lenovo
 """
+
+def iris_whve():
+    
+    import seaborn as sns; sns.set(color_codes=True)
+    iris = sns.load_dataset("iris")
+    species = iris.pop("species")
+    g = sns.clustermap(iris)
+    
+    return
+# iris_whve()
+    
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -31,4 +43,3 @@ ax = sns.heatmap(data, cmap="Blues", yticklabels=True, xticklabels=True,vmin=0, 
 plt.savefig('vj.VP1.xlsx.png', dpi=300, bbox_inches='tight')
 """
 sns.heatmap(flights, annot=True, fmt="d", linewidths=.5, ax=ax)
-"""
